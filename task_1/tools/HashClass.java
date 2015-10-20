@@ -1,21 +1,17 @@
-package kazakov.hash;
+package tools;
 
-/**
- * Created by user on 29.09.2015.
- */
-import java.security.SecureRandom;
-import javax.crypto.spec.PBEKeySpec;
 import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.PBEKeySpec;
 import java.math.BigInteger;
 import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
 import java.security.spec.InvalidKeySpecException;
 
-/*
- * PBKDF2 salted password hashing.
- * Author: havoc AT defuse.ca
- * www: http://crackstation.net/hashing-security.htm
+/**
+ * Created by user on 20.10.2015.
  */
 public class HashClass {
+
     public static final String PBKDF2_ALGORITHM = "PBKDF2WithHmacSHA1";
 
     // The following constants may be changed without breaking existing hashes.
@@ -206,7 +202,5 @@ public class HashClass {
         random.nextBytes(salt);
         return salt;
     }
-
-
 
 }

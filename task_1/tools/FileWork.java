@@ -1,8 +1,10 @@
-package kazakov.hash;
+package tools;
 
 import java.io.*;
 
-
+/**
+ * Created by user on 20.10.2015.
+ */
 public class FileWork {
     /**
      *Writes a content into a file with giving path
@@ -89,5 +91,4 @@ public class FileWork {
 
         return 0;
     }
-
 }
